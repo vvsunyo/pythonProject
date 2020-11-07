@@ -7,7 +7,7 @@ if __name__ == '__main__':
     wb.save('cases.xlsx')
     wb = openpyxl.load_workbook("cases.xlsx")
     sheets = wb.get_sheet_by_name()
-##EXCELSDJKLSDKLA
+##EXCEL
     for i in range(len(sheets)):
         if sheets[i].find("发货明细") != -1:
             sheet = wb.get_sheet_by_name(sheets[i])
